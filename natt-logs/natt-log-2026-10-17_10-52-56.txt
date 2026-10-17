@@ -1,0 +1,117 @@
+[10:52:56][PluginLoader][WARNING] Plugins directory not found.
+[10:52:56][NATTCore][INFO] NATT CORE initialization done
+Version: 1.7.0 
+Configuration path: https://gitlab.com/ap5vs/test-config/telnet-client-config/-/raw/main/test-config-2.yaml?ref_type=heads
+Configuration loading mode: FROM URL
+[10:52:56][NATTCore][INFO] Working directory path: C:\Users\pavel\Desktop\telnet\telnet-client
+[10:52:56][NATTCore][INFO] Start loading of the configuration file ...
+[10:52:57][NetworkIO][INFO] Yaml data has been loaded from network location (https://gitlab.com/ap5vs/test-config/telnet-client-config/-/raw/main/test-config-2.yaml?ref_type=heads)
+[10:52:57][NATTCore][INFO] Configuration loading done
+[10:52:57][NATTCore][INFO] Start building test structure according to the configuration ...
+[10:52:57][NATTCore][INFO] Test structure ...
+[10:52:57][NATTCore][INFO] Test structure building done
+[10:52:57][NATTCore][INFO] Start test executing ...
+[10:52:57][TestReportGenerator][INFO] Extenet reports generated. Final report will be saved to file: test_report.html
+[10:52:57][NATTCore][INFO] Starts execution on the root keyword  ...
+[10:52:57][MessageBuffer][INFO] Message buffer created for module with name: tel-server-1
+[10:52:57][TelnetServer][INFO] (tel-server-1) Server socket is listening on port 9999
+[10:52:57][MessageBuffer][INFO] Message buffer created for module with name: default
+[10:52:57][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999
+[10:52:58][ProcessManager][INFO] New PID (28304) added to file
+[10:52:58][WaitKw][INFO] Waiting: 200 ms
+[10:52:58][TestSuiteKw][INFO] Test case 'Test odeslání zprávy 1' starts executing now
+[10:52:58][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: This is test message 1
+[10:52:58][WaitKw][INFO] Waiting: 500 ms
+[10:52:58][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-1 ] Content: 'This is test message 1'
+[10:52:58][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: Next test message
+[10:52:58][WaitKw][INFO] Waiting: 1200 ms
+[10:52:58][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-1 ] Content: 'Next test message'
+[10:53:00][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: This is test message 1
+[10:53:00][NATTContext][INFO] Data has been stored in to the variable 'var-2'. Data value: Next test message
+[10:53:00][TestSuiteKw][INFO] Test suite 'Testování odesílání zpráv' - Test case 'Test odeslání zprávy 1' passed
+[10:53:00][MessageBuffer][INFO] Message buffer cleared
+[10:53:00][TestSuiteKw][INFO] Test case 'Test odeslání zprávy 2' starts executing now
+[10:53:00][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: This is test message 1
+[10:53:00][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: This is test message 2
+[10:53:00][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-1 ] Content: 'This is test message 1'
+[10:53:00][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-1 ] Content: 'This is test message 2'
+[10:53:00][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: This is test message 3
+[10:53:00][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-1 ] Content: 'This is test message 3'
+[10:53:00][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: This is test message 4
+[10:53:00][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-1 ] Content: 'This is test message 4'
+[10:53:00][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: This is test message 5
+[10:53:00][WaitKw][INFO] Waiting: 1200 ms
+[10:53:00][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-1 ] Content: 'This is test message 5'
+[10:53:02][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: This is test message 3
+[10:53:02][NATTContext][INFO] Data has been stored in to the variable 'var-2'. Data value: 5
+[10:53:02][TestSuiteKw][INFO] Test suite 'Testování odesílání zpráv' - Test case 'Test odeslání zprávy 2' passed
+[10:53:02][MessageBuffer][INFO] Message buffer cleared
+[10:53:02][TestSuiteKw][INFO] Test case 'Test odeslání zprávy 3' starts executing now
+[10:53:02][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: This is test message 1
+[10:53:02][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: This is test message 3
+[10:53:02][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: This is test message 5
+[10:53:02][WaitKw][INFO] Waiting: 1200 ms
+[10:53:02][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-1 ] Content: 'This is test message 1'
+[10:53:02][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-1 ] Content: 'This is test message 3'
+[10:53:02][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-1 ] Content: 'This is test message 5'
+[10:53:03][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 
+[10:53:03][TestSuiteKw][INFO] Test suite 'Testování odesílání zpráv' - Test case 'Test odeslání zprávy 3' passed
+[10:53:04][MessageBuffer][INFO] Message buffer cleared
+[10:53:04][MessageBuffer][INFO] Message buffer cleared
+[10:53:04][ExternalProgramRunner][INFO] (default) Termiting external application
+[10:53:04][TelnetServer][INFO] (tel-server-1) Client disconnected
+[10:53:04][TelnetServer][INFO] (tel-server-1) Client disconnected
+[10:53:04][ProcessManager][INFO] PID (28304) removed from file
+[10:53:04][ProcessManager][INFO] PID (28304) removed from file
+[10:53:04][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999
+[10:53:04][ExternalProgramRunner][WARNING] (default) External application ends with error: 1
+[10:53:05][ProcessManager][INFO] New PID (12900) added to file
+[10:53:05][WaitKw][INFO] Waiting: 200 ms
+[10:53:05][TestSuiteKw][INFO] Test case 'Test přijímání zpráv 1' starts executing now
+[10:53:05][TelnetServer][INFO] (tel-server-1) Message send: This is message from server
+[10:53:05][WaitKw][INFO] Waiting: 1200 ms
+[10:53:06][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: 
+[10:53:06][AssertEqualsKw][WARNING] Assertion failed. True was expected as the result. Condition: (Value of variable '' must equals expected text 'This is message from server')
+[10:53:06][TestSuiteKw][ERROR] Test suite 'Testování přijímání zpráv' - Test case 'Test přijímání zpráv 1' failed
+[10:53:06][MessageBuffer][INFO] Message buffer cleared
+[10:53:07][TestSuiteKw][INFO] Test case 'Test přijímání zpráv 2' starts executing now
+[10:53:07][TelnetServer][INFO] (tel-server-1) Message send: This is message from server 1
+[10:53:07][WaitKw][INFO] Waiting: 400 ms
+[10:53:07][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: 'This is message from server 1'
+[10:53:08][TelnetServer][INFO] (tel-server-1) Message send: Next message
+[10:53:08][MessageBuffer][INFO] Message added to buffer [ Mod: default | Tag:  ] Content: 'Next message'
+[10:53:08][WaitKw][INFO] Waiting: 900 ms
+[10:53:08][NATTContext][INFO] Data has been stored in to the variable 'var-1'. Data value: This is message from server 1
+[10:53:08][NATTContext][INFO] Data has been stored in to the variable 'var-2'. Data value: Next message
+[10:53:08][TestSuiteKw][INFO] Test suite 'Testování přijímání zpráv' - Test case 'Test přijímání zpráv 2' passed
+[10:53:09][MessageBuffer][INFO] Message buffer cleared
+[10:53:09][MessageBuffer][INFO] Message buffer cleared
+[10:53:09][ExternalProgramRunner][INFO] (default) Termiting external application
+[10:53:09][ProcessManager][INFO] PID (12900) removed from file
+[10:53:09][ExternalProgramRunner][INFO] (default) Run external app with command: java -jar app/build/libs/app.jar localhost 9999
+[10:53:09][TelnetServer][INFO] (tel-server-1) Client disconnected
+[10:53:09][ProcessManager][INFO] PID (12900) removed from file
+[10:53:10][TelnetServer][INFO] (tel-server-1) Client disconnected
+[10:53:10][ExternalProgramRunner][WARNING] (default) External application ends with error: 1
+[10:53:10][ProcessManager][INFO] New PID (24900) added to file
+[10:53:10][WaitKw][INFO] Waiting: 200 ms
+[10:53:10][TestSuiteKw][INFO] Test case 'Test ukončení' starts executing now
+[10:53:10][ExternalProgramRunner][INFO] (default) Sending message on standard stream. Message content: /QUIT
+[10:53:10][WaitKw][INFO] Waiting: 1000 ms
+[10:53:11][AssertAppIsRunningKw][WARNING] Assertion failed. False was expected as the result. Condition: (External tested application is running)
+[10:53:11][TestSuiteKw][ERROR] Test suite 'Test příkazu pro ukončení' - Test case 'Test ukončení' failed
+[10:53:11][MessageBuffer][INFO] Message added to buffer [ Mod: tel-server-1 | Tag: client-3 ] Content: '/QUIT'
+[10:53:11][TelnetServer][INFO] (tel-server-1) Client disconnected
+[10:53:11][ProcessManager][INFO] PID (24900) removed from file
+[10:53:11][ExternalProgramRunner][INFO] (default) External application ends with exit code 0
+[10:53:12][MessageBuffer][INFO] Message buffer cleared
+[10:53:12][MessageBuffer][INFO] Message buffer cleared
+[10:53:12][MessageBuffer][INFO] Message buffer cleared
+[10:53:12][TelnetServer][INFO] (tel-server-1) Telnet server [tel-server-1] terminated
+[10:53:12][NATTCore][INFO] Test executing finished
+[10:53:12][TelnetServer][INFO] (tel-server-1) Server socket closed
+[10:53:12][NATTCore][INFO] Start generating test report
+[10:53:13][TestReportGenerator][INFO] Report saved to file
+[10:53:13][NATTCore][WARNING] Failed test cases: "Test přijímání zpráv 1", "Test ukončení"
+[10:53:13][NATTCore][INFO] Final score: 2,666667
+[10:53:13][NATTCore][ERROR] Testing done. Leaving status: FAILED
